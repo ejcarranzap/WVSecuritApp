@@ -6,6 +6,8 @@ import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okio.Buffer
 import org.json.JSONObject
+import java.text.SimpleDateFormat
+import java.util.*
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -35,9 +37,12 @@ class MyInterceptor @Inject constructor(private var sharedPreferencesRepository:
 
                 if (json.has("action")) {
                     if (json.getString("action") != "S") {
+                        val sdf = SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
+                        val currentDate = sdf.format(Date())
+
                         val prms = JSONObject()
                         prms.accumulate("user", sharedPreferencesRepository.user)
-                        prms.accumulate("date", "2023-02-18 22:03:00")
+                        prms.accumulate("date", currentDate)
                         json.accumulate("extra", prms)
                     } else {
                         json.accumulate("extra", JSONObject())
