@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/activity_main.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/dialog_custom.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/dialog_custom.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/app_bar_main.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/activity_news_old.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/activity_news_old.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/activity_incident.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/activity_incident.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/activity_news.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/activity_news.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/layout_news_fragment.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/layout_news_fragment.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/activity_login.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/layout_loading_dialog.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/layout_loading_dialog.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-mergeDebugResources-35:/layout/nav_header.xml",
+        "source": "com.itx.wvsecurit.app-main-38:/layout/nav_header.xml"
+    }
+]

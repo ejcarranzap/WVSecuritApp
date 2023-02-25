@@ -1,0 +1,254 @@
+[
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_button_panic_adaptive_fore.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_button_panic_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_security.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_launcher_security.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_launcher_security_adaptive_fore.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_launcher_security_adaptive_fore.png"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_button_panic.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_button_panic.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_activity_news.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/activity_news.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/drawable_background.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/drawable/background.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_nav_header.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_button_panic_adaptive_fore.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_button_panic_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_activity_login.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_button_panic_adaptive_fore.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_button_panic_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher_security.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-anydpi-v26/ic_launcher_security.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_launcher_security_adaptive_back.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_launcher_security_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_activity_main.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/drawable_round_cordners_r10.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/drawable/round_cordners_r10.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_security_adaptive_back.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_launcher_security_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_app_bar_main.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_security_adaptive_fore.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_launcher_security_adaptive_fore.png"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_button_panic.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_button_panic.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_activity_news_old.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/activity_news_old.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_launcher_security.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_launcher_security.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_launcher_security_adaptive_fore.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_launcher_security_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_button_panic_adaptive_back.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_button_panic_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_button_panic_adaptive_back.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_button_panic_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_launcher_security_adaptive_fore.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_launcher_security_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_security_adaptive_fore.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_launcher_security_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_dialog_custom.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/dialog_custom.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_button_panic_adaptive_back.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_button_panic_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/drawable_ic_tracking.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/drawable/ic_tracking.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/xml_backup_rules.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_launcher_security_adaptive_back.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_launcher_security_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_security_adaptive_back.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_launcher_security_adaptive_back.png"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_button_panic.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_button_panic.png"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_button_panic_adaptive_fore.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_button_panic_adaptive_fore.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_layout_news_fragment.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/layout_news_fragment.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_button_panic_adaptive_back.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_button_panic_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_activity_incident.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/activity_incident.xml"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_button_panic_adaptive_back.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_button_panic_adaptive_back.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/drawable-v24_dialog_bg.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/drawable-v24/dialog_bg.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_launcher_security.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_launcher_security.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/menu_nav_menu.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/menu/nav_menu.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_launcher_security.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_launcher_security.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-mdpi_ic_launcher_security_adaptive_back.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-mdpi/ic_launcher_security_adaptive_back.png"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_button_panic.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_button_panic.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xhdpi_ic_button_panic_adaptive_fore.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xhdpi/ic_button_panic_adaptive_fore.png"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_button_panic.png.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_button_panic.png"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.itx.wvsecurit.app-merged_res-36:/mipmap-anydpi-v26_ic_button_panic.xml.flat",
+        "source": "com.itx.wvsecurit.app-main-38:/mipmap-anydpi-v26/ic_button_panic.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/layout_layout_loading_dialog.xml.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/layout/layout_loading_dialog.xml"
+    },
+    {
+        "merged": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_security.png.flat",
+        "source": "/Users/nit/.gradle/daemon/7.4/com.itx.wvsecurit.app-main-38:/mipmap-xxhdpi/ic_launcher_security.png"
+    }
+]
