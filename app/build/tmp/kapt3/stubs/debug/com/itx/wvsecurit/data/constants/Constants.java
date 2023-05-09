@@ -7,13 +7,13 @@ public final class Constants {
     @org.jetbrains.annotations.NotNull()
     public static final com.itx.wvsecurit.data.constants.Constants INSTANCE = null;
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String IP = "http://192.168.1.11:3081/";
+    public static final java.lang.String IP = "http://45.228.232.227:8080/";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MAIN_URL = "http://192.168.1.11:3081/server/main/";
+    public static final java.lang.String MAIN_URL = "http://45.228.232.227:8080/server/main/";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String SITE_URL = "http://192.168.1.11:3081/server/main/";
+    public static final java.lang.String SITE_URL = "http://45.228.232.227:8080/server/main/";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String UPLOADS_URL = "http://192.168.1.11:3081/uploads/";
+    public static final java.lang.String UPLOADS_URL = "http://45.228.232.227:8080/uploads/";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String TIME_STAMP_FORMAT = "yyyy/MM/dd\'T\'HH:mm:ss.SSS\'Z\'";
     

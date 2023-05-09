@@ -10,7 +10,7 @@ import retrofit2.http.Path;
 public abstract interface FileDownloadApiClient {
     
     @org.jetbrains.annotations.NotNull()
-    @retrofit2.http.GET(value = "http://192.168.1.11:3081/uploads/{file}")
+    @retrofit2.http.GET(value = "http://45.228.232.227:8080/uploads/{file}")
     public abstract retrofit2.Call<okhttp3.ResponseBody> get(@org.jetbrains.annotations.NotNull()
     @retrofit2.http.Path(value = "file")
     java.lang.String file);
