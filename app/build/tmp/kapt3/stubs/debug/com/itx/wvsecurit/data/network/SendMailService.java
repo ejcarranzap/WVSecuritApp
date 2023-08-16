@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 public abstract interface SendMailService {
     
     @org.jetbrains.annotations.NotNull()
-    @retrofit2.http.POST(value = "http://45.228.232.227:8080/server/main/send_emailB")
+    @retrofit2.http.POST(value = "http://167.250.223.251:3084/server/main/send_emailB")
     public abstract retrofit2.Call<com.itx.common.jcdata.CustomResponse<java.util.List<com.itx.wvsecurit.data.database.entities.SendMailEntity>>> post(@org.jetbrains.annotations.NotNull()
     @retrofit2.http.Body()
     com.itx.wvsecurit.data.database.entities.SendMailEntity request);

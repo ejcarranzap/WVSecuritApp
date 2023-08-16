@@ -14,7 +14,7 @@ import retrofit2.http.Query;
 public abstract interface UploadService {
     
     @org.jetbrains.annotations.NotNull()
-    @retrofit2.http.POST(value = "http://45.228.232.227:8080/upload")
+    @retrofit2.http.POST(value = "http://167.250.223.251:3084/upload")
     @retrofit2.http.Multipart()
     public abstract retrofit2.Call<com.itx.common.jcdata.CustomResponse<com.itx.wvsecurit.data.database.entities.FileEntity>> uploadImages(@org.jetbrains.annotations.NotNull()
     @retrofit2.http.Part()
