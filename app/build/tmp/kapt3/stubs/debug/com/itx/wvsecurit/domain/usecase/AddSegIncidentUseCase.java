@@ -10,14 +10,14 @@ import javax.inject.Inject;
 public final class AddSegIncidentUseCase {
     private final com.itx.wvsecurit.data.network.SegIncidentApiClient segIncidentApiClient = null;
     
-    @javax.inject.Inject()
-    public AddSegIncidentUseCase(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public AddSegIncidentUseCase(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.network.SegIncidentApiClient segIncidentApiClient) {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
-    public final retrofit2.Call<com.itx.common.jcdata.CustomResponse<java.util.List<com.itx.wvsecurit.data.database.entities.SegIncidentEntity>>> invoke(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
+    public final retrofit2.Call<com.itx.common.jcdata.CustomResponse<java.util.List<com.itx.wvsecurit.data.database.entities.SegIncidentEntity>>> invoke(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.database.entities.SegIncidentEntity obj) {
         return null;
     }

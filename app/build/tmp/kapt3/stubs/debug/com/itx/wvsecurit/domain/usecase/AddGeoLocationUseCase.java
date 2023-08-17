@@ -11,14 +11,14 @@ import javax.inject.Inject;
 public final class AddGeoLocationUseCase {
     private final com.itx.wvsecurit.data.network.GeoLocationApiClient geoLocationApiClient = null;
     
-    @javax.inject.Inject()
-    public AddGeoLocationUseCase(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public AddGeoLocationUseCase(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.network.GeoLocationApiClient geoLocationApiClient) {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
-    public final retrofit2.Call<com.itx.common.jcdata.CustomResponse<java.util.List<com.itx.wvsecurit.data.database.entities.GeoLocationEntity>>> invoke(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
+    public final retrofit2.Call<com.itx.common.jcdata.CustomResponse<java.util.List<com.itx.wvsecurit.data.database.entities.GeoLocationEntity>>> invoke(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.database.entities.GeoLocationEntity obj) {
         return null;
     }

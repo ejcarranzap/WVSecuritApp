@@ -8,33 +8,33 @@ import javax.inject.Inject;
 public final class GeoLocationRepository {
     private final com.itx.wvsecurit.data.database.dao.GeoLocationDao geoLocationDao = null;
     
-    @javax.inject.Inject()
-    public GeoLocationRepository(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public GeoLocationRepository(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.database.dao.GeoLocationDao geoLocationDao) {
         super();
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object getAllGeoLocation(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object getAllGeoLocation(@org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super java.util.List<com.itx.wvsecurit.data.database.entities.GeoLocationEntity>> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object getAllGeoLocationPend(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object getAllGeoLocationPend(@org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super java.util.List<com.itx.wvsecurit.data.database.entities.GeoLocationEntity>> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object insertGeoLocation(@org.jetbrains.annotations.NotNull()
-    com.itx.wvsecurit.data.database.entities.GeoLocationEntity geoLocationEntity, @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object insertGeoLocation(@org.jetbrains.annotations.NotNull
+    com.itx.wvsecurit.data.database.entities.GeoLocationEntity geoLocationEntity, @org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object updateGeoLocationSync(int sync, int id, @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object updateGeoLocationSync(int sync, int id, @org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }

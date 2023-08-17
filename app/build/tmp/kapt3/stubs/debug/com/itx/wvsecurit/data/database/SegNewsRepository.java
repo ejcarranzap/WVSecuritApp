@@ -8,39 +8,39 @@ import javax.inject.Inject;
 public final class SegNewsRepository {
     private final com.itx.wvsecurit.data.database.dao.SegNewsDao dao = null;
     
-    @javax.inject.Inject()
-    public SegNewsRepository(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public SegNewsRepository(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.database.dao.SegNewsDao dao) {
         super();
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object getAll(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object getAll(@org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super java.util.List<com.itx.wvsecurit.data.database.entities.SegNewsEntity>> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object getAllPend(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object getAllPend(@org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super java.util.List<com.itx.wvsecurit.data.database.entities.SegNewsEntity>> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object insert(@org.jetbrains.annotations.NotNull()
-    com.itx.wvsecurit.data.database.entities.SegNewsEntity entity, @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object insert(@org.jetbrains.annotations.NotNull
+    com.itx.wvsecurit.data.database.entities.SegNewsEntity entity, @org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object updateSync(int sync, int id, @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object updateSync(int sync, int id, @org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }
     
-    @org.jetbrains.annotations.Nullable()
-    public final java.lang.Object deleteAll(@org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.Nullable
+    public final java.lang.Object deleteAll(@org.jetbrains.annotations.NotNull
     kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
         return null;
     }

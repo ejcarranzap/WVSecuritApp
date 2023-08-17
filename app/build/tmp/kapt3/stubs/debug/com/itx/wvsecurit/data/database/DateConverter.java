@@ -10,14 +10,14 @@ public final class DateConverter {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
-    @androidx.room.TypeConverter()
+    @org.jetbrains.annotations.NotNull
+    @androidx.room.TypeConverter
     public final java.util.Date toDate(long dateLong) {
         return null;
     }
     
-    @androidx.room.TypeConverter()
-    public final long fromDate(@org.jetbrains.annotations.NotNull()
+    @androidx.room.TypeConverter
+    public final long fromDate(@org.jetbrains.annotations.NotNull
     java.util.Date date) {
         return 0L;
     }

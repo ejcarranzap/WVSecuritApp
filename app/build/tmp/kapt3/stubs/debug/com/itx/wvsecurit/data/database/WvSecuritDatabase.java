@@ -15,21 +15,21 @@ public abstract class WvSecuritDatabase extends androidx.room.RoomDatabase {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public abstract com.itx.wvsecurit.data.database.dao.GeoLocationDao getGeoLocationDao();
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public abstract com.itx.wvsecurit.data.database.dao.SegIncidentTypeDao getSegIncidentTypeDao();
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public abstract com.itx.wvsecurit.data.database.dao.SegIncidentDao getSegIncidentDao();
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public abstract com.itx.wvsecurit.data.database.dao.GeoAlertTypeDao getGeoAlertTypeDao();
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public abstract com.itx.wvsecurit.data.database.dao.GeoLocationAlertDao getGeoLocationAlertDao();
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public abstract com.itx.wvsecurit.data.database.dao.SegNewsDao getSegNewsDao();
 }

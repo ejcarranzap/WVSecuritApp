@@ -10,7 +10,7 @@ import java.util.UUID;
 
 @kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 \u00032\u00020\u0001:\u0001\u0003B\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0004"}, d2 = {"Lcom/itx/wvsecurit/tool/MyImageTool;", "", "()V", "Companion", "app_debug"})
 public final class MyImageTool {
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public static final com.itx.wvsecurit.tool.MyImageTool.Companion Companion = null;
     public static android.content.Context context;
     
@@ -25,31 +25,31 @@ public final class MyImageTool {
             super();
         }
         
-        @org.jetbrains.annotations.NotNull()
+        @org.jetbrains.annotations.NotNull
         public final android.content.Context getContext() {
             return null;
         }
         
-        public final void setContext(@org.jetbrains.annotations.NotNull()
+        public final void setContext(@org.jetbrains.annotations.NotNull
         android.content.Context p0) {
         }
         
-        @org.jetbrains.annotations.NotNull()
-        public final okhttp3.MultipartBody.Part buildImageBodyPart(@org.jetbrains.annotations.NotNull()
-        java.lang.String fileName, @org.jetbrains.annotations.NotNull()
+        @org.jetbrains.annotations.NotNull
+        public final okhttp3.MultipartBody.Part buildImageBodyPart(@org.jetbrains.annotations.NotNull
+        java.lang.String fileName, @org.jetbrains.annotations.NotNull
         android.graphics.Bitmap bitmap) {
             return null;
         }
         
-        @org.jetbrains.annotations.NotNull()
-        public final java.io.File convertBitmapToFile(@org.jetbrains.annotations.NotNull()
-        java.lang.String fileName, @org.jetbrains.annotations.NotNull()
+        @org.jetbrains.annotations.NotNull
+        public final java.io.File convertBitmapToFile(@org.jetbrains.annotations.NotNull
+        java.lang.String fileName, @org.jetbrains.annotations.NotNull
         android.graphics.Bitmap bitmap) {
             return null;
         }
         
-        @org.jetbrains.annotations.Nullable()
-        public final android.graphics.Bitmap decodeSampledBitmapFromFile(@org.jetbrains.annotations.Nullable()
+        @org.jetbrains.annotations.Nullable
+        public final android.graphics.Bitmap decodeSampledBitmapFromFile(@org.jetbrains.annotations.Nullable
         java.lang.String path, int reqWidth, int reqHeight) {
             return null;
         }

@@ -25,18 +25,18 @@ public final class MyCustomDialogFragment extends androidx.fragment.app.DialogFr
     public kotlin.jvm.functions.Function1<? super android.view.View, kotlin.Unit> function;
     private java.util.HashMap _$_findViewCache;
     
-    @javax.inject.Inject()
-    public MyCustomDialogFragment(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public MyCustomDialogFragment(@org.jetbrains.annotations.NotNull
     androidx.fragment.app.FragmentManager supportFragmentManager) {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final kotlin.jvm.functions.Function1<android.view.View, kotlin.Unit> getFunction() {
         return null;
     }
     
-    public final void setFunction(@org.jetbrains.annotations.NotNull()
+    public final void setFunction(@org.jetbrains.annotations.NotNull
     kotlin.jvm.functions.Function1<? super android.view.View, kotlin.Unit> p0) {
     }
     
@@ -46,36 +46,36 @@ public final class MyCustomDialogFragment extends androidx.fragment.app.DialogFr
     public final void dismissDialog() {
     }
     
-    @org.jetbrains.annotations.Nullable()
-    @java.lang.Override()
-    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull()
-    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable()
-    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable()
+    @org.jetbrains.annotations.Nullable
+    @java.lang.Override
+    public android.view.View onCreateView(@org.jetbrains.annotations.NotNull
+    android.view.LayoutInflater inflater, @org.jetbrains.annotations.Nullable
+    android.view.ViewGroup container, @org.jetbrains.annotations.Nullable
     android.os.Bundle savedInstanceState) {
         return null;
     }
     
-    @java.lang.Override()
+    @java.lang.Override
     public void onStart() {
     }
     
-    public final void setTitleDialog(@org.jetbrains.annotations.NotNull()
+    public final void setTitleDialog(@org.jetbrains.annotations.NotNull
     java.lang.String title) {
     }
     
-    public final void setMsgDialog(@org.jetbrains.annotations.NotNull()
+    public final void setMsgDialog(@org.jetbrains.annotations.NotNull
     java.lang.String msg) {
     }
     
-    public final void setFunctionDialog(@org.jetbrains.annotations.NotNull()
+    public final void setFunctionDialog(@org.jetbrains.annotations.NotNull
     kotlin.jvm.functions.Function1<? super android.view.View, kotlin.Unit> function) {
     }
     
-    public final void setOkBtnText(@org.jetbrains.annotations.NotNull()
+    public final void setOkBtnText(@org.jetbrains.annotations.NotNull
     java.lang.String text) {
     }
     
-    public final void setCancelBtnText(@org.jetbrains.annotations.NotNull()
+    public final void setCancelBtnText(@org.jetbrains.annotations.NotNull
     java.lang.String text) {
     }
     

@@ -4,7 +4,7 @@
             "outputFile": "com.itx.wvsecurit.app-mergeDebugResources-34:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/nit/.gradle/caches/transforms-3/fab5aadfbd8a1fe0deb1f2420f04dfc3/transformed/appcompat-1.5.1/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "C:\\Users\\jonatanc\\.gradle\\caches\\transforms-3\\fab5aadfbd8a1fe0deb1f2420f04dfc3\\transformed\\appcompat-1.5.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

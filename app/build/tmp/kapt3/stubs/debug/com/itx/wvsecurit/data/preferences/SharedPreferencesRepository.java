@@ -9,20 +9,20 @@ import javax.inject.Inject;
 public final class SharedPreferencesRepository {
     private final android.content.SharedPreferences sharedPreferences = null;
     private final android.content.SharedPreferences.Editor editor = null;
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public static final com.itx.wvsecurit.data.preferences.SharedPreferencesRepository.Companion Companion = null;
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public static final java.lang.String sharedToken = "shared_token";
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public static final java.lang.String sharedUser = "shared_user";
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public static final java.lang.String sharedIsLogin = "shared_is_login";
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public static final java.lang.String sharedIsGpsTraking = "sharedIsGpsTraking";
     
-    @javax.inject.Inject()
-    public SharedPreferencesRepository(@org.jetbrains.annotations.NotNull()
-    android.content.SharedPreferences sharedPreferences, @org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public SharedPreferencesRepository(@org.jetbrains.annotations.NotNull
+    android.content.SharedPreferences sharedPreferences, @org.jetbrains.annotations.NotNull
     android.content.SharedPreferences.Editor editor) {
         super();
     }
@@ -41,21 +41,21 @@ public final class SharedPreferencesRepository {
     public final void setGpsTracking(boolean value) {
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getToken() {
         return null;
     }
     
-    public final void setToken(@org.jetbrains.annotations.NotNull()
+    public final void setToken(@org.jetbrains.annotations.NotNull
     java.lang.String value) {
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getUser() {
         return null;
     }
     
-    public final void setUser(@org.jetbrains.annotations.NotNull()
+    public final void setUser(@org.jetbrains.annotations.NotNull
     java.lang.String value) {
     }
     

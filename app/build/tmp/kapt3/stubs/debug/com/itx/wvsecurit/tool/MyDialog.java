@@ -9,8 +9,8 @@ import javax.inject.Inject;
 public final class MyDialog {
     private final android.app.AlertDialog alertDialog = null;
     
-    @javax.inject.Inject()
-    public MyDialog(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public MyDialog(@org.jetbrains.annotations.NotNull
     android.app.AlertDialog alertDialog) {
         super();
     }
@@ -21,7 +21,7 @@ public final class MyDialog {
     public final void dismiss() {
     }
     
-    public final void setTitle(@org.jetbrains.annotations.NotNull()
+    public final void setTitle(@org.jetbrains.annotations.NotNull
     java.lang.String title) {
     }
 }

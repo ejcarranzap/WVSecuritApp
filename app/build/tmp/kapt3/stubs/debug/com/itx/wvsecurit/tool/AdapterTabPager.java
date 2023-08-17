@@ -10,33 +10,33 @@ public final class AdapterTabPager extends androidx.viewpager2.adapter.FragmentS
     private final java.util.ArrayList<androidx.fragment.app.Fragment> mFragmentList = null;
     private final java.util.ArrayList<java.lang.String> mFragmentTitleList = null;
     
-    public AdapterTabPager(@org.jetbrains.annotations.Nullable()
+    public AdapterTabPager(@org.jetbrains.annotations.Nullable
     androidx.fragment.app.FragmentActivity activity) {
         super(null);
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getTabTitle(int position) {
         return null;
     }
     
-    public final void addFragment(@org.jetbrains.annotations.NotNull()
-    androidx.fragment.app.Fragment fragment, @org.jetbrains.annotations.NotNull()
+    public final void addFragment(@org.jetbrains.annotations.NotNull
+    androidx.fragment.app.Fragment fragment, @org.jetbrains.annotations.NotNull
     java.lang.String title) {
     }
     
-    @java.lang.Override()
+    @java.lang.Override
     public int getItemCount() {
         return 0;
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final androidx.fragment.app.Fragment getItem(int position) {
         return null;
     }
     
-    @org.jetbrains.annotations.NotNull()
-    @java.lang.Override()
+    @org.jetbrains.annotations.NotNull
+    @java.lang.Override
     public androidx.fragment.app.Fragment createFragment(int position) {
         return null;
     }

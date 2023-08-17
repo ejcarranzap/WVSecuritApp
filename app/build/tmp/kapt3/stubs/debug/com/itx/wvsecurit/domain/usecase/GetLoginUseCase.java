@@ -10,15 +10,15 @@ import javax.inject.Inject;
 public final class GetLoginUseCase {
     private final com.itx.wvsecurit.data.network.LoginApiClient loginApiClient = null;
     
-    @javax.inject.Inject()
-    public GetLoginUseCase(@org.jetbrains.annotations.NotNull()
+    @javax.inject.Inject
+    public GetLoginUseCase(@org.jetbrains.annotations.NotNull
     com.itx.wvsecurit.data.network.LoginApiClient loginApiClient) {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
-    public final retrofit2.Call<com.itx.wvsecurit.data.network.LoginApiResponse> invoke(@org.jetbrains.annotations.NotNull()
-    java.lang.String user, @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
+    public final retrofit2.Call<com.itx.wvsecurit.data.network.LoginApiResponse> invoke(@org.jetbrains.annotations.NotNull
+    java.lang.String user, @org.jetbrains.annotations.NotNull
     java.lang.String password) {
         return null;
     }

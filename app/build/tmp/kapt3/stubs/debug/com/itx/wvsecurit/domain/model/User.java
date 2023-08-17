@@ -19,48 +19,48 @@ public final class User {
         super();
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getIdusuario() {
         return null;
     }
     
-    public final void setIdusuario(@org.jetbrains.annotations.NotNull()
+    public final void setIdusuario(@org.jetbrains.annotations.NotNull
     java.lang.String p0) {
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getUsername() {
         return null;
     }
     
-    public final void setUsername(@org.jetbrains.annotations.NotNull()
+    public final void setUsername(@org.jetbrains.annotations.NotNull
     java.lang.String p0) {
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getPassword() {
         return null;
     }
     
-    public final void setPassword(@org.jetbrains.annotations.NotNull()
+    public final void setPassword(@org.jetbrains.annotations.NotNull
     java.lang.String p0) {
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getImage() {
         return null;
     }
     
-    public final void setImage(@org.jetbrains.annotations.NotNull()
+    public final void setImage(@org.jetbrains.annotations.NotNull
     java.lang.String p0) {
     }
     
-    @org.jetbrains.annotations.NotNull()
+    @org.jetbrains.annotations.NotNull
     public final java.lang.String getNombreusuario() {
         return null;
     }
     
-    public final void setNombreusuario(@org.jetbrains.annotations.NotNull()
+    public final void setNombreusuario(@org.jetbrains.annotations.NotNull
     java.lang.String p0) {
     }
 }
