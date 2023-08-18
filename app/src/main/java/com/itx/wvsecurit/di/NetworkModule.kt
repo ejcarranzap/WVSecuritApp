@@ -27,7 +27,7 @@ import javax.net.ssl.X509TrustManager
 
 @Module
 @InstallIn(SingletonComponent::class)
-class ffNetworkModule {
+class NetworkModule {
     @Provides
     @Singleton
     fun provideGson(): Gson {
