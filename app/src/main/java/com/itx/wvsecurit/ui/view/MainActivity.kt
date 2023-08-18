@@ -14,6 +14,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -26,6 +27,7 @@ import com.google.android.gms.location.LocationServices
 import com.google.android.gms.tasks.CancellationTokenSource
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.itx.wvsecurit.R
+import com.itx.wvsecurit.data.constants.Constants
 import com.itx.wvsecurit.data.database.*
 import com.itx.wvsecurit.data.database.entities.GeoAlertTypeEntity
 import com.itx.wvsecurit.data.database.entities.GeoLocationAlertEntity
@@ -49,6 +51,7 @@ import com.itx.wvsecurit.ui.viewmodel.GeoLocationViewModel
 import com.itx.wvsecurit.ui.viewmodel.SharedPreferencesViewModel
 import com.nambimobile.widgets.efab.FabOption
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.nav_header.view.tvHeader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -244,6 +247,7 @@ class MainActivity: AppCompatActivity() {
         }
 
         //binding.tvMain.text = "is location service running ? ${LocationService.isLocationServiceRunning}"
+        binding.navView.getHeaderView(0).tvHeader.text = "WVSecuritApp " + Constants.VERSION
 
         /*binding.tvLocation.setOnClickListener(View.OnClickListener {
             requestLocationB()
