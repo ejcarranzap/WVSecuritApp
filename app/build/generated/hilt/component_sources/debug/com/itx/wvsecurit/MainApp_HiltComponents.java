@@ -4,6 +4,8 @@ import com.itx.wvsecurit.di.DialogModule;
 import com.itx.wvsecurit.di.RoomModule;
 import com.itx.wvsecurit.di.SessionModule;
 import com.itx.wvsecurit.di.ffNetworkModule;
+import com.itx.wvsecurit.service.MainService;
+import com.itx.wvsecurit.tool.LocationService_GeneratedInjector;
 import com.itx.wvsecurit.ui.view.IncidentActivity_GeneratedInjector;
 import com.itx.wvsecurit.ui.view.LoginActivity_GeneratedInjector;
 import com.itx.wvsecurit.ui.view.MainActivity_GeneratedInjector;
@@ -139,9 +141,12 @@ public final class MainApp_HiltComponents {
       GeneratedComponent {
   }
 
-  @Subcomponent
+  @Subcomponent(
+      modules = MainService.class
+  )
   @ServiceScoped
-  public abstract static class ServiceC implements ServiceComponent,
+  public abstract static class ServiceC implements LocationService_GeneratedInjector,
+      ServiceComponent,
       GeneratedComponent {
     @Subcomponent.Builder
     abstract interface Builder extends ServiceComponentBuilder {

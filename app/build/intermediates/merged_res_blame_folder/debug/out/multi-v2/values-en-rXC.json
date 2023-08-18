@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.itx.wvsecurit.app-mergeDebugResources-34:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.itx.wvsecurit.app-mergeDebugResources-3:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jonatanc\\.gradle\\caches\\transforms-3\\16104ea7dd52355e812c24daae051dc6\\transformed\\core-1.8.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "D:\\SOFTWARE\\ANDROID\\android-sdk\\caches\\transforms-3\\16104ea7dd52355e812c24daae051dc6\\transformed\\core-1.8.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jonatanc\\.gradle\\caches\\transforms-3\\fab5aadfbd8a1fe0deb1f2420f04dfc3\\transformed\\appcompat-1.5.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "D:\\SOFTWARE\\ANDROID\\android-sdk\\caches\\transforms-3\\fab5aadfbd8a1fe0deb1f2420f04dfc3\\transformed\\appcompat-1.5.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

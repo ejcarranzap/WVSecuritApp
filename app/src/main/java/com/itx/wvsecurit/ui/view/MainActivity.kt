@@ -1,6 +1,7 @@
 package com.itx.wvsecurit.ui.view
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
@@ -18,6 +19,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.lifecycle.lifecycleScope
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
@@ -95,6 +97,7 @@ class MainActivity: AppCompatActivity() {
 
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
 
+    @SuppressLint("MissingPermission")
     private fun SaveGeoLocationAlert(data: GeoAlertTypeEntity){
         /*val priority = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY
         val cancellationTokenSource = CancellationTokenSource()
@@ -121,7 +124,8 @@ class MainActivity: AppCompatActivity() {
         val task = fusedLocationProviderClient.lastLocation
 
         task.addOnSuccessListener {
-            GlobalScope.launch {
+            lifecycleScope.launch {
+            /*GlobalScope.launch {*/
                 withContext(Dispatchers.IO){
                     withContext(Dispatchers.Main){
                         if (it != null){
@@ -141,7 +145,7 @@ class MainActivity: AppCompatActivity() {
         super.onResume()
         System.out.println("onResume")
         if(sharedPreferencesRepository.gpsTracking)
-        requestLocation()
+            requestLocationB()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -152,7 +156,7 @@ class MainActivity: AppCompatActivity() {
         System.out.println("onCreate")
 
         Thread.setDefaultUncaughtExceptionHandler { thread, e ->
-            GlobalScope.launch(Dispatchers.Main) {
+            lifecycleScope.launch(Dispatchers.Main) {
                 withContext(Dispatchers.Main){
                     Toast.makeText(applicationContext,"Error Main: " + e.message, Toast.LENGTH_LONG).show()
                     myDialog.dismiss()
@@ -227,24 +231,22 @@ class MainActivity: AppCompatActivity() {
         }
 
         geoLocationViewModel.geoLocationList.observe(this){
-            GlobalScope.launch(Dispatchers.Main) {
+            lifecycleScope.launch {
                 withContext(Dispatchers.IO) {
-                    withContext(Dispatchers.Main){
                         val list = geoLocationRepository.getAllGeoLocation()
                         for (l in list){
                             System.out.println("GEO POS ${l.Id_geo_location} ${l.latitude} ${l.longitude} ${l.user_mod} ${l.date_mod}")
                         }
-                    }
                 }
 
             }
 
         }
 
-        binding.tvMain.text = "is location service running ? ${LocationService.isLocationServiceRunning}"
+        //binding.tvMain.text = "is location service running ? ${LocationService.isLocationServiceRunning}"
 
         /*binding.tvLocation.setOnClickListener(View.OnClickListener {
-            requestLocation()
+            requestLocationB()
             /*requestMainService()*/
         })*/
 
@@ -256,7 +258,7 @@ class MainActivity: AppCompatActivity() {
                 Toast.makeText(applicationContext, btn.text.toString() + " Value: " + et.text.toString(), Toast.LENGTH_LONG).show()
                 myCustomDialog.dismissDialog()
 
-                GlobalScope.launch(Dispatchers.Main) {
+                lifecycleScope.launch(Dispatchers.Main) {
                     withContext(Dispatchers.IO) {
                         withContext(Dispatchers.Main){
                             sendMailService.post(SendMailEntity("Modulo Seguridad<jon.mega888@gmail.com>", "ejcarranzap@gmail.com",
@@ -281,9 +283,10 @@ class MainActivity: AppCompatActivity() {
             sharedPreferencesRepository.gpsTracking = !sharedPreferencesRepository.gpsTracking
             setFabColor()
             if(sharedPreferencesRepository.gpsTracking){
-                requestLocation()
+                requestLocationB()
             }else {
-                LocationManager.stop(this@MainActivity)
+                stopLocationB()
+                //LocationManager.stop(this@MainActivity)
             }
         }
         setFabColor()
@@ -296,7 +299,7 @@ class MainActivity: AppCompatActivity() {
 
         if(checkLogin()){
             if(sharedPreferencesRepository.gpsTracking)
-            requestLocation()
+                requestLocationB()
             /*requestMainService()*/
 
             loadFabs()
@@ -304,8 +307,8 @@ class MainActivity: AppCompatActivity() {
     }
 
     fun loadFabs() {
-        GlobalScope.launch(Dispatchers.Main) {
-            withContext(Dispatchers.IO) {
+        lifecycleScope.launch {
+
                 //Do background tasks...
                 //delay(3000)
                 withContext(Dispatchers.Main){
@@ -341,7 +344,7 @@ class MainActivity: AppCompatActivity() {
                 }
             }
 
-        }
+
     }
 
     fun getRandomColor(): Int {
@@ -373,7 +376,7 @@ class MainActivity: AppCompatActivity() {
         MainServiceManager.Builder.setInterval(5000).create(this).request { msg ->
             try{
                 System.out.println("Message from requestMainService: " + msg)
-                GlobalScope.launch(Dispatchers.Main) {
+                lifecycleScope.launch {
                     withContext(Dispatchers.IO) {
                         /*withContext(Dispatchers.Main){*/
                         if(sharedPreferencesRepository != null){
@@ -410,37 +413,61 @@ class MainActivity: AppCompatActivity() {
         }
     }
 
+    private fun requestLocationB(){
+        Intent(applicationContext, com.itx.wvsecurit.tool.LocationService::class.java).apply {
+            action = com.itx.wvsecurit.tool.LocationService.ACTION_START
+            startService(this)
+        }
+    }
+
+    private fun stopLocationB(){
+        Intent(applicationContext, com.itx.wvsecurit.tool.LocationService::class.java).apply {
+            action = com.itx.wvsecurit.tool.LocationService.ACTION_STOP
+            startService(this)
+        }
+    }
+
     private fun requestLocation(){
-        LocationManager.Builder.setInterval(10000).setFastestInterval(10000)
-            .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY).create(this@MainActivity)
-            .request(true) { latitude, longitude ->
-                try{
-                    val locationString = "$latitude\n$longitude"
-                    //binding.tvLocation.text = locationString
-                    binding.tvMain.text = "is location service running ? ${LocationService.isLocationServiceRunning}"
-                    GlobalScope.launch {
-                        withContext(Dispatchers.IO){
-                            geoLocationRepository.insertGeoLocation(GeoLocationEntity(0,"I","",
-                                latitude, longitude,"", sharedPreferencesRepository.user,
-                                Date(), 1, 0))
+            LocationManager.Builder.setInterval(10000).setFastestInterval(10000)
+                .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY).create(this@MainActivity)
+                .request(true) { latitude, longitude ->
+                    try {
+                        val locationString = "$latitude\n$longitude"
+                        //binding.tvLocation.text = locationString
+                        //binding.tvMain.text = "is location service running ? ${LocationService.isLocationServiceRunning}"
 
-                            geoLocationViewModel.geoLocationList.postValue(geoLocationRepository.getAllGeoLocation())
-                        }
-                    }
+                        lifecycleScope.launch {
 
-                    GlobalScope.launch(Dispatchers.Main) {
-                        withContext(Dispatchers.IO){
-                            val list = geoLocationRepository.getAllGeoLocationPend()
-                            for (l in list){
-                                addGeoLocationUseCase.invoke(l).awaitResponse()
-                                geoLocationRepository.updateGeoLocationSync(1, l.Id_geo_location!!)
+                            withContext(Dispatchers.IO) {
+                                geoLocationRepository.insertGeoLocation(
+                                    GeoLocationEntity(
+                                        0, "I", "",
+                                        latitude, longitude, "", sharedPreferencesRepository.user,
+                                        Date(), 1, 0
+                                    )
+                                )
+
+                                withContext(Dispatchers.Main) {
+                                    geoLocationViewModel.geoLocationList.postValue(
+                                        geoLocationRepository.getAllGeoLocation()
+                                    )
+                                }
+
+                                val list = geoLocationRepository.getAllGeoLocationPend()
+                                for (l in list) {
+                                    addGeoLocationUseCase.invoke(l).awaitResponse()
+                                    geoLocationRepository.updateGeoLocationSync(
+                                        1,
+                                        l.Id_geo_location!!
+                                    )
+                                }
                             }
+
                         }
-                    }
 
 
-                    /*LocationManager.stop(this)*/
-                    /*GlobalScope.launch(Dispatchers.Main) {
+                        /*LocationManager.stop(this)*/
+                        /*GlobalScope.launch(Dispatchers.Main) {
                         withContext(Dispatchers.IO) {
                             withContext(Dispatchers.Main){
                                 geoLocationRepository.insertGeoLocation(GeoLocationEntity(0, latitude, longitude, sharedPreferencesRepository.user, Date()))
@@ -448,11 +475,10 @@ class MainActivity: AppCompatActivity() {
                         }
 
                     }*/
-                }catch(e: Exception){
-                    System.out.println("Error Location Manager request" + e.message)
+                    } catch (e: Exception) {
+                        System.out.println("Error Location Manager request" + e.message)
+                    }
                 }
-            }
-
         //you can also use location manager like this
         //because interval, priority has default value
         /*LocationManager.Builder.create(this).request {latitude, longitude ->

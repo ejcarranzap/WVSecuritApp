@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.itx.wvsecurit.app-mergeDebugResources-34:/values-v18/values-v18.xml",
+            "outputFile": "com.itx.wvsecurit.app-mergeDebugResources-3:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jonatanc\\.gradle\\caches\\transforms-3\\fab5aadfbd8a1fe0deb1f2420f04dfc3\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
+                    "source": "D:\\SOFTWARE\\ANDROID\\android-sdk\\caches\\transforms-3\\fab5aadfbd8a1fe0deb1f2420f04dfc3\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

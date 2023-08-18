@@ -66,6 +66,8 @@ import com.itx.wvsecurit.domain.usecase.AddGeoLocationUseCase;
 import com.itx.wvsecurit.domain.usecase.AddSegIncidentUseCase;
 import com.itx.wvsecurit.domain.usecase.GetLoginUseCase;
 import com.itx.wvsecurit.domain.usecase.GetSegIncidentTypeUseCase;
+import com.itx.wvsecurit.tool.LocationService;
+import com.itx.wvsecurit.tool.LocationService_MembersInjector;
 import com.itx.wvsecurit.tool.MyCustomDialogFragment;
 import com.itx.wvsecurit.tool.MyDialog;
 import com.itx.wvsecurit.tool.MyInterceptor;
@@ -712,6 +714,26 @@ public final class DaggerMainApp_HiltComponents_SingletonC {
       this.singletonCImpl = singletonCImpl;
 
 
+    }
+
+    private GeoLocationRepository geoLocationRepository() {
+      return new GeoLocationRepository(singletonCImpl.provideGeoLocationDaoProvider.get());
+    }
+
+    private AddGeoLocationUseCase addGeoLocationUseCase() {
+      return new AddGeoLocationUseCase(singletonCImpl.provideGeoLocationApiClientProvider.get());
+    }
+
+    @Override
+    public void injectLocationService(LocationService locationService) {
+      injectLocationService2(locationService);
+    }
+
+    private LocationService injectLocationService2(LocationService instance) {
+      LocationService_MembersInjector.injectGeoLocationRepository(instance, geoLocationRepository());
+      LocationService_MembersInjector.injectAddGeoLocationUseCase(instance, addGeoLocationUseCase());
+      LocationService_MembersInjector.injectSharedPreferencesRepository(instance, singletonCImpl.sharedPreferencesRepository());
+      return instance;
     }
   }
 

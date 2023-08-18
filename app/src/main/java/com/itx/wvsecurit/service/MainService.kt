@@ -13,11 +13,17 @@ import android.os.IBinder
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.itx.wvsecurit.ui.view.MainActivity
+import dagger.Module
+import dagger.hilt.InstallIn
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.components.ServiceComponent
+import dagger.hilt.components.SingletonComponent
 import java.lang.ref.WeakReference
 import java.text.SimpleDateFormat
 import java.util.*
 
+@Module
+@InstallIn(ServiceComponent::class)
 class MainService : Service() {
     companion object {
         var isMainServiceRunning = false

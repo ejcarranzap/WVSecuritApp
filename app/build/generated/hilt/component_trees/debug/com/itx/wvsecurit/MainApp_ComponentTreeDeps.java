@@ -22,6 +22,8 @@ import hilt_aggregated_deps._com_itx_wvsecurit_di_DialogModule;
 import hilt_aggregated_deps._com_itx_wvsecurit_di_RoomModule;
 import hilt_aggregated_deps._com_itx_wvsecurit_di_SessionModule;
 import hilt_aggregated_deps._com_itx_wvsecurit_di_ffNetworkModule;
+import hilt_aggregated_deps._com_itx_wvsecurit_service_MainService;
+import hilt_aggregated_deps._com_itx_wvsecurit_tool_LocationService_GeneratedInjector;
 import hilt_aggregated_deps._com_itx_wvsecurit_ui_view_IncidentActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_itx_wvsecurit_ui_view_LoginActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_itx_wvsecurit_ui_view_MainActivity_GeneratedInjector;
@@ -74,6 +76,8 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_itx_wvsecurit_di_RoomModule.class,
         _com_itx_wvsecurit_di_SessionModule.class,
         _com_itx_wvsecurit_di_ffNetworkModule.class,
+        _com_itx_wvsecurit_service_MainService.class,
+        _com_itx_wvsecurit_tool_LocationService_GeneratedInjector.class,
         _com_itx_wvsecurit_ui_view_IncidentActivity_GeneratedInjector.class,
         _com_itx_wvsecurit_ui_view_LoginActivity_GeneratedInjector.class,
         _com_itx_wvsecurit_ui_view_MainActivity_GeneratedInjector.class,
