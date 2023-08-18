@@ -16,5 +16,5 @@ object Constants {
     const val UPLOADS_URL = "http://167.250.223.251:3084/uploads/"
 
     const val TIME_STAMP_FORMAT = "yyyy/MM/dd'T'HH:mm:ss.SSS'Z'"
-    const val VERSION = "2.0"
+    const val VERSION = "2.1"
 }
