@@ -8,7 +8,7 @@ import com.itx.wvsecurit.data.database.entities.*
 
 @Database(entities = [GeoLocationEntity::class,
     SegIncidentTypeEntity::class,SegIncidentEntity::class, GeoAlertTypeEntity::class,
-                     GeoLocationAlertEntity::class,SegNewsEntity::class], version = 1, exportSchema = false)
+                     GeoLocationAlertEntity::class,SegNewsEntity::class], version = 1/*, exportSchema = false*/)
 @TypeConverters(DateConverter::class)
 abstract class WvSecuritDatabase: RoomDatabase(){
     abstract fun getGeoLocationDao(): GeoLocationDao

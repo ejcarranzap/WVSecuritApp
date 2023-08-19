@@ -27,6 +27,10 @@ android {
             }
         }
 
+        hilt {
+            enableAggregatingTask = true
+        }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {

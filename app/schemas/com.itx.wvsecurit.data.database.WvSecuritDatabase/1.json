@@ -1,0 +1,470 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "83804fceed496c21df7c1d8c46f5c9ab",
+    "entities": [
+      {
+        "tableName": "geo_location",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id_geo_location` INTEGER, `action` TEXT, `rawprm` TEXT, `latitude` REAL, `longitude` REAL, `description` TEXT, `user_mod` TEXT, `date_mod` INTEGER, `active` INTEGER, `sync` INTEGER, PRIMARY KEY(`Id_geo_location`))",
+        "fields": [
+          {
+            "fieldPath": "Id_geo_location",
+            "columnName": "Id_geo_location",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "action",
+            "columnName": "action",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rawprm",
+            "columnName": "rawprm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "user_mod",
+            "columnName": "user_mod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date_mod",
+            "columnName": "date_mod",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sync",
+            "columnName": "sync",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id_geo_location"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "seg_incident_type",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id_incident_type` INTEGER, `action` TEXT, `rawprm` TEXT, `Id_incident_group` INTEGER, `code` TEXT, `name` TEXT, `description` TEXT, `user_mod` TEXT, `date_mod` INTEGER, `active` INTEGER, `sync` INTEGER, PRIMARY KEY(`Id_incident_type`))",
+        "fields": [
+          {
+            "fieldPath": "Id_incident_type",
+            "columnName": "Id_incident_type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "action",
+            "columnName": "action",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rawprm",
+            "columnName": "rawprm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Id_incident_group",
+            "columnName": "Id_incident_group",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "user_mod",
+            "columnName": "user_mod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date_mod",
+            "columnName": "date_mod",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sync",
+            "columnName": "sync",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id_incident_type"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "seg_incident",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id_incident` INTEGER, `action` TEXT, `rawprm` TEXT, `Id_incident_type` INTEGER, `description` TEXT, `image1` TEXT, `user_mod` TEXT, `date_mod` INTEGER, `active` INTEGER, `sync` INTEGER, PRIMARY KEY(`Id_incident`))",
+        "fields": [
+          {
+            "fieldPath": "Id_incident",
+            "columnName": "Id_incident",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "action",
+            "columnName": "action",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rawprm",
+            "columnName": "rawprm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Id_incident_type",
+            "columnName": "Id_incident_type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image1",
+            "columnName": "image1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "user_mod",
+            "columnName": "user_mod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date_mod",
+            "columnName": "date_mod",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sync",
+            "columnName": "sync",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id_incident"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "geo_alert_type",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id_alert_type` INTEGER, `action` TEXT, `rawprm` TEXT, `code` TEXT, `name` TEXT, `description` TEXT, `user_mod` TEXT, `date_mod` INTEGER, `active` INTEGER, `sync` INTEGER, PRIMARY KEY(`Id_alert_type`))",
+        "fields": [
+          {
+            "fieldPath": "Id_alert_type",
+            "columnName": "Id_alert_type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "action",
+            "columnName": "action",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rawprm",
+            "columnName": "rawprm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "user_mod",
+            "columnName": "user_mod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date_mod",
+            "columnName": "date_mod",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sync",
+            "columnName": "sync",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id_alert_type"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "geo_location_alert",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id_geo_location_alert` INTEGER, `action` TEXT, `rawprm` TEXT, `Id_alert_type` INTEGER, `latitude` REAL, `longitude` REAL, `description` TEXT, `user_mod` TEXT, `date_mod` INTEGER, `active` INTEGER, `sync` INTEGER, PRIMARY KEY(`Id_geo_location_alert`))",
+        "fields": [
+          {
+            "fieldPath": "Id_geo_location_alert",
+            "columnName": "Id_geo_location_alert",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "action",
+            "columnName": "action",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rawprm",
+            "columnName": "rawprm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Id_alert_type",
+            "columnName": "Id_alert_type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "user_mod",
+            "columnName": "user_mod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date_mod",
+            "columnName": "date_mod",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sync",
+            "columnName": "sync",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id_geo_location_alert"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "seg_news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id_news` INTEGER, `action` TEXT, `rawprm` TEXT, `description` TEXT, `image1` TEXT, `user_mod` TEXT, `date_mod` INTEGER, `active` INTEGER, `sync` INTEGER, `Id_news_type` INTEGER, PRIMARY KEY(`Id_news`))",
+        "fields": [
+          {
+            "fieldPath": "Id_news",
+            "columnName": "Id_news",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "action",
+            "columnName": "action",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rawprm",
+            "columnName": "rawprm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image1",
+            "columnName": "image1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "user_mod",
+            "columnName": "user_mod",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date_mod",
+            "columnName": "date_mod",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "active",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sync",
+            "columnName": "sync",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Id_news_type",
+            "columnName": "Id_news_type",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id_news"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '83804fceed496c21df7c1d8c46f5c9ab')"
+    ]
+  }
+}
