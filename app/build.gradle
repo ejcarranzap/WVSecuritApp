@@ -2,10 +2,10 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     //HILT
-    id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
     //END HILT
 }
 
