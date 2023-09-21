@@ -265,16 +265,15 @@ class MainActivity: AppCompatActivity() {
                 lifecycleScope.launch(Dispatchers.Main) {
                     withContext(Dispatchers.IO) {
                         withContext(Dispatchers.Main){
-                            sendMailService.post(SendMailEntity("Modulo Seguridad<jon.mega888@gmail.com>", "ejcarranzap@gmail.com",
-                                "SendMail Test","Hello World", "<h1>Hello World</h1>")).awaitResponse()
+                            sendMailService.post(SendMailEntity("", "carlos_ordonez@wvi.org",
+                                "SEGURIDAD COORPORATIVA (RUTA)","", "<h1>El usuario "+sharedPreferencesRepository.user+",</h1><h3>Solicita seguimiento de ruta por GPS (WSSecuritApp)</h3>")).awaitResponse()
                         }
                     }
-
                 }
             }
             myCustomDialog.setTitleDialog("Alert")
-            myCustomDialog.setMsgDialog("Do you wanna notify?")
-            myCustomDialog.setOkBtnText("Notify")
+            myCustomDialog.setMsgDialog("Desea notificar el seguimiento?")
+            myCustomDialog.setOkBtnText("Notificar")
             myCustomDialog.setCancelBtnText("Cancel")
             myCustomDialog.setShowValueField(false)
             myCustomDialog.showDialog()
@@ -411,9 +410,9 @@ class MainActivity: AppCompatActivity() {
 
     private fun setFabColor(){
         if(sharedPreferencesRepository.gpsTracking){
-            fab.backgroundTintList = ColorStateList.valueOf(Color.RED)
-        }else{
             fab.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
+        }else{
+            fab.backgroundTintList = ColorStateList.valueOf(Color.RED)
         }
     }
 

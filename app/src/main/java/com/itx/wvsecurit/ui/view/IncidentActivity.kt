@@ -1,8 +1,10 @@
 package com.itx.wvsecurit.ui.view
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.location.Location
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
@@ -17,6 +19,9 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import com.google.android.material.internal.ViewUtils.hideKeyboard
 import com.itx.common.jcdata.CustomResponse
 import com.itx.wvsecurit.R
@@ -25,7 +30,9 @@ import com.itx.wvsecurit.data.database.SegIncidentTypeRepository
 import com.itx.wvsecurit.data.database.entities.FileEntity
 import com.itx.wvsecurit.data.database.entities.SegIncidentEntity
 import com.itx.wvsecurit.data.database.entities.SegIncidentTypeEntity
+import com.itx.wvsecurit.data.database.entities.SendMailEntity
 import com.itx.wvsecurit.data.network.SegIncidentApiClient
+import com.itx.wvsecurit.data.network.SendMailService
 import com.itx.wvsecurit.data.network.UploadService
 import com.itx.wvsecurit.data.preferences.SharedPreferencesRepository
 import com.itx.wvsecurit.databinding.ActivityIncidentBinding
@@ -57,6 +64,8 @@ class IncidentActivity : AppCompatActivity()  {
     val REQUEST_IMAGE_CAPTURE = 1
     val CAPTURE_IMAGE_FULLSIZE_ACTIVITY_REQUEST_CODE = 1777
 
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+    @Inject lateinit var sendMailService: SendMailService
     @Inject lateinit var segIncidentTypeRepository: SegIncidentTypeRepository
     @Inject lateinit var segIncidentTypeUseCase: GetSegIncidentTypeUseCase
     @Inject lateinit var sharedPreferencesRepository: SharedPreferencesRepository
@@ -72,6 +81,7 @@ class IncidentActivity : AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         Thread.setDefaultUncaughtExceptionHandler { thread, e ->
             myDialog.dismiss()
             GlobalScope.launch(Dispatchers.Main) {
@@ -126,9 +136,28 @@ class IncidentActivity : AppCompatActivity()  {
         getAddIncident()
     }
 
+    @SuppressLint("MissingPermission")
     private suspend fun save(){
         addIncidentUseCase.invoke(SegIncidentEntity(0, "I",null, selectedItemObj.Id_incident_type,binding.etDescription.text.toString(), imgName,sharedPreferencesRepository.user, Date(),1,0)).awaitResponse()
         //segIncidentRepository.insert(SegIncidentEntity("", selectedItemObj.seg_incident_type_id,"0","0","Y", Date(), "", Date(),"", binding.etDescription.text.toString(), imgName,0))
+
+        fusedLocationClient.lastLocation
+            .addOnSuccessListener { location : Location? ->
+                lifecycleScope.launch(Dispatchers.Main) {
+                    withContext(Dispatchers.IO) {
+                        withContext(Dispatchers.Main){
+                            sendMailService.post(
+                                SendMailEntity("", "carlos_ordonez@wvi.org",
+                                    "SEGURIDAD COORPORATIVA (INCIDENTE)","", "<h1>El usuario "+sharedPreferencesRepository.user+
+                                            ",</h1><h3>Ha registrado un incidente (WSSecuritApp)</h3>" +
+                                            "<a href=\"http://www.google.com/maps/place/"+location?.latitude+","+location?.longitude+"\">Ver Ubicacion</a>"
+                                )
+                            ).awaitResponse()
+                        }
+                    }
+                }
+            }
+
     }
 
     lateinit var selectedItemObj: SegIncidentTypeEntity

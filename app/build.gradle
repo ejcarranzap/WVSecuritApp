@@ -12,7 +12,6 @@ plugins {
 android {
     namespace 'com.itx.wvsecurit'
     compileSdk 32
-    buildToolsVersion '23.0.1'
 
     defaultConfig {
         applicationId "com.itx.wvsecurit"
@@ -105,7 +104,7 @@ dependencies {
     /*END RETROFIT*/
 
     /*ROOM COMPONENTS*/
-    def room_version = "2.2.6"
+    def room_version = "2.4.2"
     implementation "androidx.room:room-ktx:$room_version"
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
