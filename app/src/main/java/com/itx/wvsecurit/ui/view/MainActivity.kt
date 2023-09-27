@@ -412,7 +412,7 @@ class MainActivity: AppCompatActivity() {
         if(sharedPreferencesRepository.gpsTracking){
             fab.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
         }else{
-            fab.backgroundTintList = ColorStateList.valueOf(Color.RED)
+            fab.backgroundTintList = ColorStateList.valueOf(Color.GRAY)
         }
     }
 
